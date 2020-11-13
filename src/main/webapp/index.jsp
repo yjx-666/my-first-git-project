@@ -13,8 +13,8 @@
 <body>
 <jsp:include page="header.jsp"/>
 <h1>hello word!</h1>
-
-
+<h1>hello word!</h1>
+<h1>hello word!</h1>
 
 <jsp:include page="footer.jsp"/>
 </body>
