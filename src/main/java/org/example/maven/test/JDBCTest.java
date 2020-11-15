@@ -1,11 +1,17 @@
 package org.example.maven.test;
 
+import org.example.maven.dao.StudentDao;
+import org.example.maven.entity.Student;
 import org.example.maven.utils.DBUtil;
 
 import java.sql.*;
+import java.util.List;
 
 public class JDBCTest {
     public static void jdbcTest(){
+        Connection connection = null;
+        PreparedStatement statement = null;
+        ResultSet resultSet = null;
         //加载数据库驱动
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");//反射
@@ -14,27 +20,37 @@ public class JDBCTest {
             String url = "jdbc:mysql://localhost:3306/student_info?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8";
             String username = "root";
             String password = "3431";
-            Connection connection = DriverManager.getConnection(url,username,password);
+            connection = DriverManager.getConnection(url,username,password);
             String sql = "select * from stu_info";
-            PreparedStatement statement = connection.prepareCall(sql);
+            statement = connection.prepareCall(sql);
             //int i = statement.executeUpdate();仅用于Delete，Update，Insert
-            ResultSet resultSet = statement.executeQuery();//仅用于Select
+            resultSet = statement.executeQuery();//仅用于Select
             while (resultSet.next()){
                 //column：列，zong
                 String no = resultSet.getString(1);//相当于String no = resultSet.getString("stu_no");
                 String name = resultSet.getString("stu_name");
-
-                System.out.println("no : " + no + " \tname : " + name);
+                System.out.println("stuNo : " + no + " \tstuName : " + name);
             }
 
-            //关闭所有连接，倒序关闭,顺序不能倒
-            resultSet.close();
-            statement.close();
-            connection.close();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            //关闭所有连接，倒序关闭,顺序不能倒
+            try {
+                if (resultSet != null) {
+                    resultSet.close();
+                }
+                if (statement != null) {
+                    statement.close();
+                }
+                if (connection != null) {
+                    connection.close();
+                }
+            }  catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
         }
     }
 
@@ -48,18 +64,20 @@ public class JDBCTest {
             String no = resultSet.getString(1);//相当于String no = resultSet.getString("stu_no");
             String name = resultSet.getString("stu_name");
 
-            System.out.println("no : " + no + " \tname : " + name);
+            System.out.println("stuo : " + no + " \tstuName : " + name);
         }
         DBUtil.close(resultSet, statement, connection);
     }
 
-    public static void main(String[] args){
-        //jdbcTest();
-        System.out.println();
-        try {
-            jdbcTest2();
-        } catch (SQLException e) {
-            e.printStackTrace();
+    public static void main(String[] args) throws SQLException{
+        //第一种方法
+//        jdbcTest();
+        //第二种方法，异常通过throws上抛
+//        jdbcTest2();
+        //第三种方法，更合理
+        List<Student> students = StudentDao.getStudents();
+        for (Student student : students){
+            System.out.println("stuNo: " + student.getStuNo() + "\tstuName :" + student.getStuName());
         }
     }
 }
