@@ -9,8 +9,12 @@
 <body>
 <div class="login-main">
   <header class="layui-elip">登录</header>
-  <form class="layui-form" action="login" method="post">
-    <div class="layui-input-inline">
+<%--    以下几种方法都行--%>
+    <form class="layui-form" action="login" method="post">
+<%--  <form class="layui-form" action="http://localhost:8080/maven/login" method="post">--%>
+<%-- action="login"不能加上斜杠，否则跳到http://localhost:8080/login --%>
+    <form class="layui-form" action="login" method="post">
+      <div class="layui-input-inline">
       <label>
         <input type="text" name="username" required placeholder="用户名" class="layui-input">
       </label>

@@ -22,7 +22,9 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("name",name);
             session.setAttribute("password",password);
         //登录成功则跳转到某一个页面
-            resp.sendRedirect(req.getContextPath() + "/admini.jsp");
+            resp.sendRedirect("admini.jsp");//加斜杠就是跳到~8080/admini.jsp就会发生404
+            //相当于resp.sendRedirect(req.getContextPath() + "/admini.jsp");
+            //req.getContextPath()获取当前的工程路径
         }
     }
 }
