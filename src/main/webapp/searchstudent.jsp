@@ -19,7 +19,7 @@
     <header class="layui-elip">查询学生信息</header>
     <%--    以下几种方法都行--%>
 
-        <form class="layui-form" action="searchstudentinfo" method="post">
+        <form class="layui-form" action="searchstudent" method="post">
             <div class="layui-input-inline">
                 <label>
                     <input type="text" name="stuNo" required placeholder="请输入学号" class="layui-input">

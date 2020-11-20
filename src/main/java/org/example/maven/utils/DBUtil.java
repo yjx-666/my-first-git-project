@@ -81,6 +81,7 @@ public class DBUtil {
 
     public static void close(ResultSet resultSet, PreparedStatement statement, Connection connection)
     {
+        //方法的重载
         close(resultSet);
         close(statement);
         close(connection);
