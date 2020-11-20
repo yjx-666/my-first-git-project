@@ -12,10 +12,10 @@
 </head>
 <body>
 <jsp:include page="header.jsp"/>
-<h1>hello word!</h1>
-<h1>hello word!</h1>
-<h1>hello word!</h1>
+<script src="/layui/layui.js" charset="utf-8"></script>
+<div class="layui-container">
 
-<jsp:include page="footer.jsp"/>
+<h1>hello<h1/>
+
 </body>
 </html>

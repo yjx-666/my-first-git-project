@@ -1,6 +1,13 @@
 <!DOCTYPE web-app PUBLIC
         "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<!--2.3或者更早的版本默认isELIgnored="false"，忽略el表达式-->
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+
+    <listener>
+        <listener-class>org.example.listener.MyContextListener</listener-class>
+    </listener>
+
 </web-app>
+
