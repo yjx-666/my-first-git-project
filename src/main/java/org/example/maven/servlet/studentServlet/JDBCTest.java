@@ -83,17 +83,13 @@ public class JDBCTest {
 
     public static void main(String[] args) throws SQLException{
         //第一种方法
-        jdbcTest();
+//        jdbcTest();
         //第二种方法，异常通过throws上抛
       //jdbcTest2();
         //第三种方法
         List<Student> students = StudentDao.getStudents();//获得Student类型的对象的列表
         for (Student student : students){
-            System.out.println("Student{" +
-                    "stuNo='" + student.getStuNo() + '\'' +
-                    ", stuName='" + student.getStuName() + '\'' +
-                    ", stuSex='" + student.getStuSex() + '\'' +
-                    '}');
+            System.out.println(student);
         }
     }
 }

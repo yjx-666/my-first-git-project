@@ -10,7 +10,7 @@
 <%--isELIgnored="false"设置不忽略el表达式--%>
 <html>
 <head>
-    <title>Title</title>
+    <title>学生信息</title>
     <link rel="stylesheet" href="layui/css/layui.css">
 </head>
 <body>

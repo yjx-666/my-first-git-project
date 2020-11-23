@@ -9,7 +9,7 @@
 <html lang="java">
 <head>
     <meta charset="utf-8">
-    <title>查询</title>
+    <title>查询学生信息</title>
     <link rel="stylesheet" href="layui/css/layui.css">
     <link rel="stylesheet" href="css/login.css">
 </head>

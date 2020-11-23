@@ -5,6 +5,7 @@
     <title>登入</title>
     <link rel="stylesheet" href="layui/css/layui.css">
     <link rel="stylesheet" href="css/login.css">
+    <script src="layui/layui.js"></script>
 </head>
 <body>
 <div class="login-main">
@@ -33,6 +34,6 @@
 </div>
 
 
-<script src="layui/layui.js"></script>
+
 </body>
 </html>

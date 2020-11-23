@@ -16,7 +16,10 @@ public class StudentDao {
             String no = resultSet.getString("stu_no");
             String name = resultSet.getString("stu_name");
             String sex = resultSet.getString("stu_sex");
-            Student student = new Student(no,name,sex);
+            String address = resultSet.getString("stu_address");
+            String phone = resultSet.getString("stu_phonenumber");
+            String stuClass = resultSet.getString("stu_class");
+            Student student = new Student(no,name,sex,stuClass,address,phone);
             return student;
     }
 
@@ -41,6 +44,18 @@ public class StudentDao {
             return student;
     }
 
+    public static void deleteStudentById(String no) throws SQLException {
+        Connection connection = DBUtil.getConnection();
+        String sql = "delete from Stu_info where stu_no = " + no;
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        int i = preparedStatement.executeUpdate();
+        if(i==1){
+            System.out.println("删除学号为 " + no + " 的学生成功");
+        }else
+            System.out.println("不存在学号为 " + no + " 的学生");
+    }
+
+
     public static List<Student> getStudents(){
         /*返回Student类型的对象的列表*/
         List<Student> students = new ArrayList<Student>();
@@ -50,11 +65,18 @@ public class StudentDao {
         try {
             preparedStatement = connection.prepareCall("select * from stu_info");
             resultSet = preparedStatement.executeQuery();
+            Student student = null;
             while (resultSet.next()){
+                /*String no = resultSet.getString("stu_no");
+                student = getStudentById(no);
+                students.add(student);*/
                 String no = resultSet.getString("stu_no");
                 String name = resultSet.getString("stu_name");
                 String sex = resultSet.getString("stu_sex");
-                Student student = new Student(no,name,sex);
+                String address = resultSet.getString("stu_address");
+                String phone = resultSet.getString("stu_phonenumber");
+                String stuClass = resultSet.getString("stu_class");
+                student = new Student(no,name,sex,stuClass,address,phone);
                 students.add(student);
             }
         } catch (SQLException throwables) {
@@ -65,8 +87,7 @@ public class StudentDao {
     }
 
     public static void main(String[] args) throws SQLException {
-        Student student = getStudentById("1877000127");
-        System.out.println(student);
+        deleteStudentById("1777000080");
     }
 }
 

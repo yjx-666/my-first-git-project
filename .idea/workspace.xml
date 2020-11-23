@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="maven:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="402eb34d-e8f6-482e-a71d-1de4870b99e5" name="Default Changelist" comment="init project">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/maven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/entity/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/standard.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/allstudents.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/jsontest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/json/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsontest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/StudentAllServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/StudentAllServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid-1.1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/spinning.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_spinning.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/OIP.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/img1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/cabin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/cake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/circus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/safe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/submarine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cbpAnimatedHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cbpAnimatedHeader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/classie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/contact_me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/freelancer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jqBootstrapValidation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.11.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchstudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/studentinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/studentinfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hello/WEB-INF/lib/druid-1.1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hello/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hello/img/img1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hello/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/hello/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hello/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/hello/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/hello/test.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="student_info: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="student_info: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1iyzYr5sXCuSR95FVxUYPSAbBO0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProjects\maven\src\main\webapp\html" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp\TestJsp" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp\WEB-INF\lib" />
+      <recent name="D:\ideaProjects\maven\src\main\java\org\example\maven" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaProjects\maven\src\main\webapp\css" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp\WEB-INF" />
+      <recent name="D:\ideaProjects\maven\servlet\web" />
+      <recent name="D:\IDEA项目\maven\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.39">
+    <configuration name="JDBCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.maven.servlet.studentServlet.JDBCTest" />
+      <module name="maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.maven.servlet.studentServlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.maven.dao.StudentDao" />
+      <module name="maven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.maven.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="Tomcat 9.0.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jsontest.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/jsontest.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="maven:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_39_maven_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53687" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="maven:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.39" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_maven" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53687" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53730" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JDBCTest" />
+      <item itemvalue="Application.StudentDao" />
+      <item itemvalue="JavaScript Debug.jsontest.jsp" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.39" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StudentDao" />
+        <item itemvalue="Application.JDBCTest" />
+        <item itemvalue="JavaScript Debug.jsontest.jsp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="402eb34d-e8f6-482e-a71d-1de4870b99e5" name="Default Changelist" comment="" />
+      <created>1602894669737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602894669737</updated>
+      <workItem from="1602894672040" duration="966000" />
+      <workItem from="1602896175049" duration="24000" />
+      <workItem from="1602896218326" duration="34000" />
+      <workItem from="1602896463797" duration="345000" />
+      <workItem from="1602897311356" duration="3474000" />
+      <workItem from="1602901976857" duration="81000" />
+      <workItem from="1602904175738" duration="1238000" />
+      <workItem from="1602906849769" duration="204000" />
+      <workItem from="1603371109125" duration="193000" />
+      <workItem from="1603412092043" duration="3584000" />
+      <workItem from="1603416999129" duration="3727000" />
+      <workItem from="1603422795872" duration="2308000" />
+      <workItem from="1603428467162" duration="335000" />
+      <workItem from="1603508511791" duration="759000" />
+      <workItem from="1603809226149" duration="628000" />
+      <workItem from="1604017618894" duration="2621000" />
+      <workItem from="1604020279904" duration="6566000" />
+      <workItem from="1604058908453" duration="1300000" />
+      <workItem from="1604479750824" duration="68000" />
+      <workItem from="1604491256408" duration="396000" />
+      <workItem from="1604491960795" duration="28386000" />
+      <workItem from="1604584722504" duration="2064000" />
+      <workItem from="1604623446709" duration="16062000" />
+      <workItem from="1604754800052" duration="801000" />
+      <workItem from="1604878654139" duration="4968000" />
+      <workItem from="1605059006166" duration="228000" />
+      <workItem from="1605227195951" duration="11022000" />
+      <workItem from="1605248605160" duration="1585000" />
+      <workItem from="1605250897176" duration="535000" />
+      <workItem from="1605251466865" duration="60000" />
+      <workItem from="1605254003340" duration="2725000" />
+      <workItem from="1605257833524" duration="1546000" />
+      <workItem from="1605263721729" duration="499000" />
+      <workItem from="1605270406988" duration="253000" />
+      <workItem from="1605274871815" duration="203000" />
+      <workItem from="1605319074906" duration="62000" />
+      <workItem from="1605399184022" duration="16603000" />
+      <workItem from="1605528579607" duration="826000" />
+      <workItem from="1605536269418" duration="1048000" />
+      <workItem from="1605537540227" duration="2250000" />
+      <workItem from="1605570418756" duration="22000" />
+      <workItem from="1605606302787" duration="264000" />
+      <workItem from="1605614651837" duration="14000" />
+      <workItem from="1605777950633" duration="39000" />
+      <workItem from="1605778895373" duration="4050000" />
+      <workItem from="1605831883629" duration="30236000" />
+      <workItem from="1605871452687" duration="9218000" />
+      <workItem from="1605917255582" duration="18186000" />
+      <workItem from="1605944540766" duration="31010000" />
+      <workItem from="1606044896163" duration="553000" />
+      <workItem from="1606058247114" duration="355000" />
+      <workItem from="1606089263948" duration="805000" />
+      <workItem from="1606105457139" duration="87000" />
+      <workItem from="1606137787817" duration="175000" />
+      <workItem from="1606137990957" duration="817000" />
+    </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1605236320218</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605236320219</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init project">
+      <created>1605256191222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605256191222</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init project">
+      <created>1605258539755</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605258539755</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init project">
+      <created>1605258918681</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605258918681</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init project">
+      <created>1605412496855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605412496856</updated>
+    </task>
+    <task id="LOCAL-00006" summary="init project">
+      <created>1605443688261</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605443688261</updated>
+    </task>
+    <task id="LOCAL-00007" summary="init project">
+      <created>1605606539377</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605606539377</updated>
+    </task>
+    <task id="LOCAL-00008" summary="init project">
+      <created>1605871590586</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605871590586</updated>
+    </task>
+    <task id="LOCAL-00009" summary="init project">
+      <created>1605877433100</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605877433100</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="384" y="139" key="#HTTP_Proxy" timestamp="1605407502881">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="384" y="139" key="#HTTP_Proxy/0.0.1536.834@0.0.1536.834" timestamp="1605407502881" />
+    <state x="361" y="79" key="#Inspections" timestamp="1605401201320">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="79" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1605401201320" />
+    <state x="361" y="79" key="#Project_Structure" timestamp="1605441739051">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="79" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1605441739051" />
+    <state x="361" y="79" key="#Template_Data_Languages" timestamp="1605999826449">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="79" key="#Template_Data_Languages/0.0.1536.834@0.0.1536.834" timestamp="1605999826449" />
+    <state x="467" y="37" key="#Tomcat_Server" timestamp="1606138057436">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="467" y="37" key="#Tomcat_Server/0.0.1536.834@0.0.1536.834" timestamp="1606138057436" />
+    <state x="384" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606138065204">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="384" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1606138065204" />
+    <state x="522" y="226" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604754848356">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="522" y="226" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1604754848356" />
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1605940384002">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1605940384002" />
+    <state x="432" y="376" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603414527635">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="432" y="376" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1603414527635" />
+    <state x="390" y="30" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1605250921442">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="390" y="30" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.834@0.0.1536.834" timestamp="1605250921442" />
+    <state x="553" y="284" width="429" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605229063059">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="553" y="284" width="429" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.834@0.0.1536.834" timestamp="1605229063059" />
+    <state x="499" y="167" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605233355372">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605233355372" />
+    <state x="524" y="123" key="#xdebugger.evaluate" timestamp="1605873034618">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="524" y="123" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1605873034618" />
+    <state x="332" y="23" width="1002" height="811" key="CommitChangelistDialog2" timestamp="1605930344190">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="332" y="23" width="1002" height="811" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1605930344190" />
+    <state x="552" y="86" key="DetectedRootsChooserDialog" timestamp="1605250472075">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="552" y="86" key="DetectedRootsChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1605250472075" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1605258773620">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1605258773620" />
+    <state x="550" y="114" key="ExecutionTargetDialog" timestamp="1605854578612">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="550" y="114" key="ExecutionTargetDialog/0.0.1536.834@0.0.1536.834" timestamp="1605854578612" />
+    <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1606138055596">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606138055596" />
+    <state width="1070" height="199" key="GridCell.Tab.0.bottom" timestamp="1606138288528">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
+    <state width="1070" height="199" key="GridCell.Tab.0.center" timestamp="1606138288528">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
+    <state width="1070" height="199" key="GridCell.Tab.0.left" timestamp="1606138288528">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
+    <state width="1070" height="199" key="GridCell.Tab.0.right" timestamp="1606138288528">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
+    <state width="1070" height="199" key="GridCell.Tab.1.bottom" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1070" height="199" key="GridCell.Tab.1.center" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1070" height="199" key="GridCell.Tab.1.left" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1070" height="199" key="GridCell.Tab.1.right" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1070" height="199" key="GridCell.Tab.2.bottom" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1070" height="199" key="GridCell.Tab.2.center" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1070" height="199" key="GridCell.Tab.2.left" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1070" height="199" key="GridCell.Tab.2.right" timestamp="1606138288416">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1070" height="199" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
+    <state width="1193" height="228" key="GridCell.Tab.3.bottom" timestamp="1605864750106">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1193" height="228" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605864750106" />
+    <state width="1193" height="228" key="GridCell.Tab.3.center" timestamp="1605864750105">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1193" height="228" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1605864750105" />
+    <state width="1193" height="228" key="GridCell.Tab.3.left" timestamp="1605864750105">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1193" height="228" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1605864750105" />
+    <state width="1193" height="228" key="GridCell.Tab.3.right" timestamp="1605864750105">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1193" height="228" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1605864750105" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605409909079">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1605409909079" />
+    <state x="554" y="142" key="RollbackChangesDialog" timestamp="1605255710908">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="554" y="142" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605255710908" />
+    <state x="56" y="22" width="1268" height="709" key="SettingsEditor" timestamp="1606138809722">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="56" y="22" width="1268" height="709" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606138809722" />
+    <state x="490" y="159" width="540" height="524" key="StructurePopup" timestamp="1604626270886">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="490" y="159" width="540" height="524" key="StructurePopup/0.0.1536.834@0.0.1536.834" timestamp="1604626270886" />
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1605930357301">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605930357301" />
+    <state x="648" y="295" width="333" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605863774545">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="648" y="295" width="333" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1605863774545" />
+    <state x="349" y="75" key="com.intellij.database.dbimport.ImportDialog" timestamp="1605944297706">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="349" y="75" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.834@0.0.1536.834" timestamp="1605944297706" />
+    <state x="499" y="194" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1605944202262">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="194" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1605944202262" />
+    <state x="609" y="111" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605409852842">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="609" y="111" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.834@0.0.1536.834" timestamp="1605409852842" />
+    <state x="461" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1605614652075">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="461" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1605614652075" />
+    <state x="564" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605442716985">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="564" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1605442716985" />
+    <state x="366" y="234" width="782" height="600" key="find.popup" timestamp="1606002865876">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="366" y="234" width="782" height="600" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1606002865876" />
+    <state x="178" y="4" key="new project wizard" timestamp="1605251391149">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="178" y="4" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1605251391149" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1605238324504">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605238324504" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604647635482">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604647635482" />
+  </component>
+</project>
