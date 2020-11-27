@@ -9,7 +9,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.example.maven.utils.DBUtil.close;
+import static org.example.maven.utils.DBUtil.getConnection;
+
 public class StudentDao {
+    private static Connection connection = null;
+    private static PreparedStatement preparedStatement = null;
+    private static ResultSet resultSet = null;
 
     public static Student getStudent(ResultSet resultSet) throws SQLException{
         /*根据数据库中查询出来的信息获得一个学生对象*/
@@ -25,10 +31,8 @@ public class StudentDao {
 
         public static Student getStudentById(String no) throws SQLException {
         /*根据学生的学号查询学生的信息最后得到一个学生对象*/
-            Connection connection = DBUtil.getConnection();
+            connection = getConnection();
             String  sql = "select * from stu_info where stu_no = ?";//防止sql注入
-            PreparedStatement preparedStatement;
-            ResultSet resultSet = null;
 
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,no);//设置第一个问号为学号no
@@ -44,24 +48,13 @@ public class StudentDao {
             return student;
     }
 
-    public static void deleteStudentById(String no) throws SQLException {
-        Connection connection = DBUtil.getConnection();
-        String sql = "delete from Stu_info where stu_no = " + no;
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        int i = preparedStatement.executeUpdate();
-        if(i==1){
-            System.out.println("删除学号为 " + no + " 的学生成功");
-        }else
-            System.out.println("不存在学号为 " + no + " 的学生");
-    }
 
 
     public static List<Student> getStudents(){
         /*返回Student类型的对象的列表*/
         List<Student> students = new ArrayList<Student>();
-        Connection connection = DBUtil.getConnection();
-        PreparedStatement preparedStatement = null;
-        ResultSet resultSet = null;
+        connection = getConnection();
+        preparedStatement = null;
         try {
             preparedStatement = connection.prepareCall("select * from stu_info");
             resultSet = preparedStatement.executeQuery();
@@ -81,13 +74,87 @@ public class StudentDao {
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        }
-        DBUtil.close(resultSet, preparedStatement, connection);
+    }
+        close(resultSet, preparedStatement, connection);
         return students;
     }
 
-    public static void main(String[] args) throws SQLException {
-        deleteStudentById("1777000080");
+    public static int deleteStudentById(String no) {
+        int state = 0;
+        try{
+            connection = getConnection();
+            String sql = "delete from Stu_info where stu_no = ?";
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,no);
+            state = preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        if(state!=0){
+            System.out.println("删除学号为 " + no + " 的学生成功");
+        }else
+            System.out.println("不存在学号为 " + no + " 的学生");
+        return state;
+    }
+
+
+    public static int addStudent(String name,String sex,String stuClass,String stuAddress,String stuPhoneNUmber){
+        connection = getConnection();
+        int result = 0;
+        try{
+            String sql = "insert into stu_info(stu_name,stu_sex,stu_class,stu_address,stu_phonenumber) values (?,?,?,?,?)";
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,name);
+            preparedStatement.setString(2,sex);
+            preparedStatement.setString(3,stuClass);
+            preparedStatement.setString(4,stuAddress);
+            preparedStatement.setString(5,stuPhoneNUmber);
+            result = preparedStatement. executeUpdate();
+            if(result != 0){
+                System.out.println("学生 " + name + " 的数据插入数据库成功！");
+            }else
+                System.out.println("学生 " + name + " 的数据插入数据库失败！");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            close(resultSet,preparedStatement,connection);
+        }
+
+        return result;
+    }
+
+   /* public static void alterStudent(String no, String name, String sex, String stuClass){
+        connection = getConnection();
+        try{
+            String sql = "update stu_info_3 set stu_name = ?,stu_sex = ? ,stu_class = ?  where stu_no = ?";
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,name);
+            preparedStatement.setString(2,sex);
+            preparedStatement.setString(3,stuClass);
+            preparedStatement.setString(4,no);
+            int result = preparedStatement. executeUpdate();
+            if(result != 0){
+                System.out.println("修改学生 " + no +" 的数据成功！");
+            }else
+                System.out.println("不存在学号为 " + no + " 的学生，修改数据失败！");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            close(resultSet,preparedStatement,connection);
+        }
+    }*/
+
+    public static void main(String[] args){
+//        Student studentById = getStudentById("1877000152");
+//        System.out.println(studentById);
+
+/*        int i = deleteStudentById("1877000072");
+        System.out.println(i);*/
+
+//        System.out.println(addStudent("22","w2","22","22","22"));
+
+
     }
 }
 

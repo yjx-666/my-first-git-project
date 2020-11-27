@@ -7,6 +7,7 @@ public class Student {
     private String stuSex;
     private String stuClass;
     private String stuAddress;
+    private String stuPhoneNumber;
 
     @Override
     public String toString() {
@@ -20,7 +21,7 @@ public class Student {
                 '}';
     }
 
-    private String stuPhoneNumber;
+
 
 
     public String getStuClass() {

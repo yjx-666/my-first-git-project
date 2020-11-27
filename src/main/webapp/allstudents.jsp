@@ -26,9 +26,10 @@
     layui.use('table', function(){
         //获得一个table对象
         var table = layui.table;//第一个实例
+        const $ = layui.$;
 
-        //render渲染table容器
-        table.render({
+        //render渲染table容器,var和const区别不大
+        var tableIns = table.render({
             //elem元素标签
             elem: '#demo',//指定原始表格元素选择器（推荐id选择器）
             height: 400//容器高度
@@ -60,10 +61,40 @@
             var tr = obj.tr; //获得当前行 tr 的 DOM 对象（如果有的话）
 
             if(layEvent === 'detail'){ //查看
-                layer.alert(JSON.stringify(data));
+                layer.open({
+                    type: 2,
+                    content: 'detail.jsp',
+                    area: ['700px', '500px'],
+                    success: function(layero, index){
+                        console.log(layero, index);
+                        // 数据绑定,从json获取相应属性的数据，即对应实体的属性名
+                        const body = layer.getChildFrame('body', index)
+                        body.find('#stu_info').val(data.stuNo);//注意#号绑定input的id值(唯一的)
+                        body.find('#stu_name').val(data.stuName);
+                        body.find('#stu_sex').val(data.stuSex);
+                        body.find('#stu_class').val(data.stuClass);
+                        body.find('#stu_address').val(data.stuAddress);
+                        body.find('#stu_phone').val(data.stuPhoneNumber);
+                    }
+                });
             } else if(layEvent === 'del'){ //删除
                 layer.confirm('真的删除行么', function(index){
-                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                 $.ajax({
+                     type:'post',
+                     url:'/stu/delete',
+                     data:{no:data.stuNo},
+                     success:function (res) {
+                         if(res.code === 200){
+                             layer.msg("操作成功");
+                             tableIns.reload();//局部刷新表格内容
+                         }else{
+                             layer.msg("操作失败");
+                         }
+                     },
+                     error:function (error) {
+                         layer.msg(error);
+                     }
+                 });
                     layer.close(index);
                     //向服务端发送删除指令
                 });

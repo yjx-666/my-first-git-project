@@ -25,92 +25,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="402eb34d-e8f6-482e-a71d-1de4870b99e5" name="Default Changelist" comment="init project">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/servlet_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/maven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/entity/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/standard.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/allstudents.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/jsontest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/json/test.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsontest.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/DeleteStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/dao/StudentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/JDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/StudentAllServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/maven/servlet/studentServlet/StudentAllServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/druid-1.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/bordered-pulled.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/core.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/fixed-width.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/font-awesome.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/icons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/larger.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/list.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/mixins.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/path.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/rotated-flipped.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/spinning.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/stacked.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/less/variables.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_bordered-pulled.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_fixed-width.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_larger.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_path.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_rotated-flipped.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_spinning.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_stacked.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font-awesome-4.1.0/scss/font-awesome.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/OIP.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/img1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/cabin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/cake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/circus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/safe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/portfolio/submarine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/profile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cbpAnimatedHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cbpAnimatedHeader.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/classie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/contact_me.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/freelancer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jqBootstrapValidation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.11.0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/searchstudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/searchstudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/allstudents.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/allstudents.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/studentinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/studentinfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hello/WEB-INF/lib/druid-1.1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hello/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hello/img/img1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hello/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/hello/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hello/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/hello/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/hello/test.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,22 +58,22 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="student_info: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - student_info@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="MySQL - @localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="student_info: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
@@ -158,14 +85,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Class" />
-        <option value="Jsp File" />
         <option value="HTML File" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\ideaProjects\maven\.idea" />
+      </set>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -174,34 +108,37 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1iyzYr5sXCuSR95FVxUYPSAbBO0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaWebDemo1" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ideaProjects\maven\src\main\webapp\html" />
-      <recent name="D:\ideaProjects\maven\src\main\webapp" />
-      <recent name="D:\ideaProjects\maven\src\main\webapp\TestJsp" />
-      <recent name="D:\ideaProjects\maven\src\main\webapp\WEB-INF\lib" />
-      <recent name="D:\ideaProjects\maven\src\main\java\org\example\maven" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ideaProjects\maven\src\main\webapp\css" />
       <recent name="D:\ideaProjects\maven\src\main\webapp" />
@@ -209,8 +146,15 @@
       <recent name="D:\ideaProjects\maven\servlet\web" />
       <recent name="D:\IDEA项目\maven\src\main\webapp" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProjects\maven\src\main\webapp\html" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp\TestJsp" />
+      <recent name="D:\ideaProjects\maven\src\main\webapp\WEB-INF\lib" />
+      <recent name="D:\ideaProjects\maven\src\main\java\org\example\maven" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.39">
+  <component name="RunManager" selected="Application.StudentDao">
     <configuration name="JDBCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.maven.servlet.studentServlet.JDBCTest" />
       <module name="maven" />
@@ -424,6 +368,24 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.20081967" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -488,7 +450,17 @@
       <workItem from="1606089263948" duration="805000" />
       <workItem from="1606105457139" duration="87000" />
       <workItem from="1606137787817" duration="175000" />
-      <workItem from="1606137990957" duration="817000" />
+      <workItem from="1606137990957" duration="1154000" />
+      <workItem from="1606139679635" duration="17000" />
+      <workItem from="1606139719436" duration="692000" />
+      <workItem from="1606223350197" duration="1708000" />
+      <workItem from="1606264132305" duration="242000" />
+      <workItem from="1606264415780" duration="324000" />
+      <workItem from="1606264762856" duration="14000" />
+      <workItem from="1606267727076" duration="61000" />
+      <workItem from="1606435417149" duration="66000" />
+      <workItem from="1606435702323" duration="14677000" />
+      <workItem from="1606483242359" duration="1398000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1605236320218</created>
@@ -553,11 +525,18 @@
       <option name="project" value="LOCAL" />
       <updated>1605877433100</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="init project">
+      <created>1606138859636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606138859636</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -574,12 +553,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
@@ -598,18 +578,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="79" key="#Project_Structure/0.0.1536.834@0.0.1536.834" timestamp="1605441739051" />
+    <state x="361" y="76" key="#Scopes" timestamp="1606264218078">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="76" key="#Scopes/0.0.1536.834@0.0.1536.834" timestamp="1606264218078" />
     <state x="361" y="79" key="#Template_Data_Languages" timestamp="1605999826449">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="79" key="#Template_Data_Languages/0.0.1536.834@0.0.1536.834" timestamp="1605999826449" />
-    <state x="467" y="37" key="#Tomcat_Server" timestamp="1606138057436">
+    <state x="467" y="37" key="#Tomcat_Server" timestamp="1606139814615">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="467" y="37" key="#Tomcat_Server/0.0.1536.834@0.0.1536.834" timestamp="1606138057436" />
-    <state x="384" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606138065204">
+    <state x="467" y="37" key="#Tomcat_Server/0.0.1536.834@0.0.1536.834" timestamp="1606139814615" />
+    <state x="335" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606449417128">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="384" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1606138065204" />
+    <state x="335" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1606449417128" />
     <state x="522" y="226" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604754848356">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -654,114 +638,118 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="550" y="114" key="ExecutionTargetDialog/0.0.1536.834@0.0.1536.834" timestamp="1605854578612" />
-    <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1606138055596">
+    <state x="549" y="175" key="FileChooserDialogImpl" timestamp="1606484035454">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606138055596" />
-    <state width="1070" height="199" key="GridCell.Tab.0.bottom" timestamp="1606138288528">
+    <state x="549" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606484035454" />
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom" timestamp="1606459671981">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
-    <state width="1070" height="199" key="GridCell.Tab.0.center" timestamp="1606138288528">
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606459671981" />
+    <state width="1493" height="107" key="GridCell.Tab.0.center" timestamp="1606459671981">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
-    <state width="1070" height="199" key="GridCell.Tab.0.left" timestamp="1606138288528">
+    <state width="1493" height="107" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606459671981" />
+    <state width="1493" height="107" key="GridCell.Tab.0.left" timestamp="1606459671981">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
-    <state width="1070" height="199" key="GridCell.Tab.0.right" timestamp="1606138288528">
+    <state width="1493" height="107" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606459671981" />
+    <state width="1493" height="107" key="GridCell.Tab.0.right" timestamp="1606459671981">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606138288528" />
-    <state width="1070" height="199" key="GridCell.Tab.1.bottom" timestamp="1606138288416">
+    <state width="1493" height="107" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606459671981" />
+    <state width="1169" height="41" key="GridCell.Tab.1.bottom" timestamp="1606459671976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1070" height="199" key="GridCell.Tab.1.center" timestamp="1606138288416">
+    <state width="1169" height="41" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606459671976" />
+    <state width="1169" height="41" key="GridCell.Tab.1.center" timestamp="1606459671976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1070" height="199" key="GridCell.Tab.1.left" timestamp="1606138288416">
+    <state width="1169" height="41" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1606459671976" />
+    <state width="1169" height="41" key="GridCell.Tab.1.left" timestamp="1606459671976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1070" height="199" key="GridCell.Tab.1.right" timestamp="1606138288416">
+    <state width="1169" height="41" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1606459671976" />
+    <state width="1169" height="41" key="GridCell.Tab.1.right" timestamp="1606459671976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1070" height="199" key="GridCell.Tab.2.bottom" timestamp="1606138288416">
+    <state width="1169" height="41" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1606459671976" />
+    <state width="1169" height="41" key="GridCell.Tab.2.bottom" timestamp="1606459671978">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1070" height="199" key="GridCell.Tab.2.center" timestamp="1606138288416">
+    <state width="1169" height="41" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606459671978" />
+    <state width="1169" height="41" key="GridCell.Tab.2.center" timestamp="1606459671977">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1070" height="199" key="GridCell.Tab.2.left" timestamp="1606138288416">
+    <state width="1169" height="41" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1606459671977" />
+    <state width="1169" height="41" key="GridCell.Tab.2.left" timestamp="1606459671976">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1070" height="199" key="GridCell.Tab.2.right" timestamp="1606138288416">
+    <state width="1169" height="41" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1606459671976" />
+    <state width="1169" height="41" key="GridCell.Tab.2.right" timestamp="1606459671977">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1070" height="199" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1606138288416" />
-    <state width="1193" height="228" key="GridCell.Tab.3.bottom" timestamp="1605864750106">
+    <state width="1169" height="41" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1606459671977" />
+    <state width="1024" height="2" key="GridCell.Tab.3.bottom" timestamp="1606439109074">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1193" height="228" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1605864750106" />
-    <state width="1193" height="228" key="GridCell.Tab.3.center" timestamp="1605864750105">
+    <state width="1024" height="2" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606439109074" />
+    <state width="1024" height="2" key="GridCell.Tab.3.center" timestamp="1606439109074">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1193" height="228" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1605864750105" />
-    <state width="1193" height="228" key="GridCell.Tab.3.left" timestamp="1605864750105">
+    <state width="1024" height="2" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1606439109074" />
+    <state width="1024" height="2" key="GridCell.Tab.3.left" timestamp="1606439109074">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1193" height="228" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1605864750105" />
-    <state width="1193" height="228" key="GridCell.Tab.3.right" timestamp="1605864750105">
+    <state width="1024" height="2" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1606439109074" />
+    <state width="1024" height="2" key="GridCell.Tab.3.right" timestamp="1606439109074">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1193" height="228" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1605864750105" />
-    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605409909079">
+    <state width="1024" height="2" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1606439109074" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1606264689044">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1605409909079" />
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1606264689044" />
     <state x="554" y="142" key="RollbackChangesDialog" timestamp="1605255710908">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="554" y="142" key="RollbackChangesDialog/0.0.1536.834@0.0.1536.834" timestamp="1605255710908" />
-    <state x="56" y="22" width="1268" height="709" key="SettingsEditor" timestamp="1606138809722">
+    <state x="56" y="22" width="1268" height="709" key="SettingsEditor" timestamp="1606264739504">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="56" y="22" width="1268" height="709" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606138809722" />
+    <state x="56" y="22" width="1268" height="709" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1606264739504" />
     <state x="490" y="159" width="540" height="524" key="StructurePopup" timestamp="1604626270886">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="490" y="159" width="540" height="524" key="StructurePopup/0.0.1536.834@0.0.1536.834" timestamp="1604626270886" />
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1605930357301">
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2" timestamp="1606138863508">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605930357301" />
-    <state x="648" y="295" width="333" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605863774545">
+    <state x="361" y="153" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606138863508" />
+    <state x="648" y="295" width="340" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1606447064777">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="648" y="295" width="333" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1605863774545" />
-    <state x="349" y="75" key="com.intellij.database.dbimport.ImportDialog" timestamp="1605944297706">
+    <state x="648" y="295" width="340" height="249" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1606447064777" />
+    <state x="349" y="75" key="com.intellij.database.dbimport.ImportDialog" timestamp="1606447097547">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="349" y="75" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.834@0.0.1536.834" timestamp="1605944297706" />
-    <state x="499" y="194" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1605944202262">
+    <state x="349" y="75" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.834@0.0.1536.834" timestamp="1606447097547" />
+    <state x="499" y="194" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1606447088140">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="499" y="194" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1605944202262" />
+    <state x="499" y="194" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1606447088140" />
+    <state x="478" y="57" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1606446909728">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="478" y="57" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1606446909728" />
     <state x="609" y="111" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1605409852842">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="609" y="111" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.834@0.0.1536.834" timestamp="1605409852842" />
-    <state x="461" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1605614652075">
+    <state x="461" y="245" key="com.intellij.ide.util.TipDialog" timestamp="1606264762831">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="461" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1605614652075" />
+    <state x="461" y="245" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1606264762831" />
     <state x="564" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605442716985">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -778,9 +766,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1605238324504" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1604647635482">
+    <state x="431" y="154" width="672" height="678" key="search.everywhere.popup" timestamp="1606483559855">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1604647635482" />
+    <state x="431" y="154" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1606483559855" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-<%@ page import="org.example.maven.entity.Student" %>
+    <%@ page import="org.example.maven.entity.Student" %>
 <%@ page import="org.example.maven.dao.StudentDao" %><%--
   Created by IntelliJ IDEA.
   User: y
