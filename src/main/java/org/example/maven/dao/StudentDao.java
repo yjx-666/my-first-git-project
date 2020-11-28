@@ -2,6 +2,7 @@ package org.example.maven.dao;
 
 //dao专门用来存储对数据库的操作
 
+import com.mysql.cj.util.StringUtils;
 import org.example.maven.entity.Student;
 import org.example.maven.utils.DBUtil;
 
@@ -17,34 +18,47 @@ public class StudentDao {
     private static PreparedStatement preparedStatement = null;
     private static ResultSet resultSet = null;
 
-    public static Student getStudent(ResultSet resultSet) throws SQLException{
+    public static Student getStudent(ResultSet resultSet){
         /*根据数据库中查询出来的信息获得一个学生对象*/
+        Student student = null;
+        try{
             String no = resultSet.getString("stu_no");
             String name = resultSet.getString("stu_name");
             String sex = resultSet.getString("stu_sex");
             String address = resultSet.getString("stu_address");
             String phone = resultSet.getString("stu_phonenumber");
             String stuClass = resultSet.getString("stu_class");
-            Student student = new Student(no,name,sex,stuClass,address,phone);
-            return student;
+            student = new Student(no,name,sex,stuClass,address,phone);
+        }catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        return student;
     }
 
-        public static Student getStudentById(String no) throws SQLException {
+        public static Student getStudentById(String no){
         /*根据学生的学号查询学生的信息最后得到一个学生对象*/
             connection = getConnection();
-            String  sql = "select * from stu_info where stu_no = ?";//防止sql注入
-
-            preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1,no);//设置第一个问号为学号no
-            resultSet = preparedStatement.executeQuery();
-            /*
-            *  ResultSet executeQuery() throws SQLException;
-            * 注意返回值为一个结果集*/
-
             Student student = null;
-            if(resultSet.next()){
-                student = getStudent(resultSet);
+            try{
+                String  sql = "select * from stu_info where stu_no = ?";//防止sql注入
+                preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setString(1,no);//设置第一个问号为学号no
+                resultSet = preparedStatement.executeQuery();
+                /*
+                 *  ResultSet executeQuery() throws SQLException;
+                 * 注意返回值为一个结果集*/
+
+
+                if(resultSet.next()){
+                    student = getStudent(resultSet);
+                }
+            }catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }finally {
+                close(resultSet,preparedStatement,connection);
             }
+
             return student;
     }
 
@@ -89,6 +103,8 @@ public class StudentDao {
             state = preparedStatement.executeUpdate();
         }catch (SQLException e){
             e.printStackTrace();
+        }finally {
+            close(resultSet,preparedStatement,connection);
         }
 
         if(state!=0){
@@ -99,22 +115,22 @@ public class StudentDao {
     }
 
 
-    public static int addStudent(String name,String sex,String stuClass,String stuAddress,String stuPhoneNUmber){
+    public static int addStudent(Student student){
         connection = getConnection();
         int result = 0;
         try{
             String sql = "insert into stu_info(stu_name,stu_sex,stu_class,stu_address,stu_phonenumber) values (?,?,?,?,?)";
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1,name);
-            preparedStatement.setString(2,sex);
-            preparedStatement.setString(3,stuClass);
-            preparedStatement.setString(4,stuAddress);
-            preparedStatement.setString(5,stuPhoneNUmber);
+            preparedStatement.setString(1,student.getStuName());
+            preparedStatement.setString(2, student.getStuSex());
+            preparedStatement.setString(3, student.getStuClass());
+            preparedStatement.setString(4,student.getStuAddress());
+            preparedStatement.setString(5,student.getStuPhoneNumber());
             result = preparedStatement. executeUpdate();
             if(result != 0){
-                System.out.println("学生 " + name + " 的数据插入数据库成功！");
+                System.out.println("学生 " + student.getStuName() + " 的数据插入数据库成功！");
             }else
-                System.out.println("学生 " + name + " 的数据插入数据库失败！");
+                System.out.println("学生 " + student.getStuName() + " 的数据插入数据库失败！");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -124,26 +140,30 @@ public class StudentDao {
         return result;
     }
 
-   /* public static void alterStudent(String no, String name, String sex, String stuClass){
+        public static int updateStudent(Student student){
         connection = getConnection();
-        try{
-            String sql = "update stu_info_3 set stu_name = ?,stu_sex = ? ,stu_class = ?  where stu_no = ?";
+            int result = 0;
+            try{
+            String sql = "update stu_info set stu_name = ?,stu_sex = ? ,stu_class = ? ,stu_address = ? ,stu_phonenumber = ? where stu_no = ?";
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1,name);
-            preparedStatement.setString(2,sex);
-            preparedStatement.setString(3,stuClass);
-            preparedStatement.setString(4,no);
-            int result = preparedStatement. executeUpdate();
+            preparedStatement.setString(1,student.getStuName());
+            preparedStatement.setString(2, student.getStuSex());
+            preparedStatement.setString(3, student.getStuClass());
+            preparedStatement.setString(4,student.getStuAddress());
+            preparedStatement.setString(5,student.getStuPhoneNumber());
+            preparedStatement.setString(6,student.getStuNo());
+            result = preparedStatement. executeUpdate();
             if(result != 0){
-                System.out.println("修改学生 " + no +" 的数据成功！");
+                System.out.println("修改学生 " + student.getStuNo() +" 的数据成功！");
             }else
-                System.out.println("不存在学号为 " + no + " 的学生，修改数据失败！");
+                System.out.println("不存在学号为 " + student.getStuNo() + " 的学生，修改数据失败！");
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             close(resultSet,preparedStatement,connection);
         }
-    }*/
+            return result;
+    }
 
     public static void main(String[] args){
 //        Student studentById = getStudentById("1877000152");
@@ -154,7 +174,27 @@ public class StudentDao {
 
 //        System.out.println(addStudent("22","w2","22","22","22"));
 
+/*        Student student = StudentDao.getStudentById("21");
+        System.out.println(student);
 
+            student.setStuName("1111");
+            student.setStuAddress("1111");
+            student.setStuClass("1111");
+            student.setStuSex("1111");
+            student.setStuPhoneNumber("1111");
+
+        int i = updateStudent(student);
+        System.out.println(i);
+        System.out.println(student);*/
+
+        Student student = new Student();
+        student.setStuName("22");
+        student.setStuAddress("1111");
+        student.setStuClass("1111");
+        student.setStuSex("1111");
+        student.setStuPhoneNumber("1111");
+        int i = addStudent(student);
+        System.out.println(i);
     }
 }
 

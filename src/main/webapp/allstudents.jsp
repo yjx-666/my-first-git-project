@@ -69,7 +69,7 @@
                         console.log(layero, index);
                         // 数据绑定,从json获取相应属性的数据，即对应实体的属性名
                         const body = layer.getChildFrame('body', index)
-                        body.find('#stu_info').val(data.stuNo);//注意#号绑定input的id值(唯一的)
+                        body.find('#stu_no').val(data.stuNo);//注意#号绑定input的id值(唯一的)
                         body.find('#stu_name').val(data.stuName);
                         body.find('#stu_sex').val(data.stuSex);
                         body.find('#stu_class').val(data.stuClass);
@@ -96,16 +96,38 @@
                      }
                  });
                     layer.close(index);
-                    //向服务端发送删除指令
+
                 });
             } else if(layEvent === 'edit'){ //编辑
-                //do something
+                layer.open({
+                    type: 2,
+                    content: 'editStudent.jsp',
+                    area: ['700px', '500px'],
+                    success: function(layero, index){
+                        console.log(layero, index);
+                        // 数据绑定,从json获取相应属性的数据，即对应实体的属性名
+                        const body = layer.getChildFrame('body', index)
+                        body.find('#stu_no').val(data.stuNo);//注意#号绑定input的id值(唯一的)
+                        body.find('#stu_name').val(data.stuName);
+                        body.find('#stu_sex').val(data.stuSex);
+                        body.find('#stu_class').val(data.stuClass);
+                        body.find('#stu_address').val(data.stuAddress);
+                        body.find('#stu_phone').val(data.stuPhoneNumber);
+                    },cancel: function(index, layero){
+                        layer.close(index);
+                        tableIns.reload();//局部刷新表格内容
+                        return false;
+                    }
+                });
 
                 //同步更新缓存对应的值
-                obj.update({
+/*                obj.update({
                     username: '123'
                     ,title: 'xxx'
                 });
+                */
+
+
             } else if(layEvent === 'LAYTABLE_TIPS'){
                 layer.alert('Hi，头部工具栏扩展的右侧图标。');
             }
@@ -125,6 +147,20 @@
                     break;
                 case 'isAll':
                     layer.msg(checkStatus.isAll ? '全选': '未全选')
+                    break;
+                case "addStudent":
+                    layer.open({
+                        type: 2,
+                        content: 'addStudent.jsp',
+                        area: ['700px', '500px'],
+                        cancel: function(index, layero){
+                    layer.close(index);
+                    tableIns.reload();//局部刷新表格内容
+                    // return false;
+                }
+
+            })
+
                     break;
             };
         });
@@ -167,6 +203,7 @@
         <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
         <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
         <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
+        <button class="layui-btn layui-btn-sm" lay-event="addStudent">添加学生信息</button>
     </div>
 </script>
 

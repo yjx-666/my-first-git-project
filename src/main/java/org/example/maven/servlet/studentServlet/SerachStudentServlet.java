@@ -19,11 +19,8 @@ public class SerachStudentServlet extends HttpServlet {
         req.setCharacterEncoding("utf-8");
         String stuNo = req.getParameter("stuNo");
         Student student = null;
-        try {
-            student = StudentDao.getStudentById(stuNo);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        student = StudentDao.getStudentById(stuNo);
+
         if(student != null && stuNo.equals(student.getStuNo())){
             //stuNo都是字符串类型，双等号比较的是引用地址是否相同，字符串比较用equals方法，谨记！
                 HttpSession session = req.getSession();//获取session对象

@@ -1,28 +1,30 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: y
+  Date: 2020/11/28
+  Time: 8:31
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>StudentDetail</title>
+    <title>Title</title>
     <link rel="stylesheet" href="layui/css/layui.css">
 </head>
 <body>
 <div class="layui-container">
     <blockquote class="layui-elem-quote layui-text">
-        学生详情：
+        添加学生信息：
     </blockquote>
 
-    <form class="layui-form" action="">
+    <form class="layui-form" action="addStudent" method="post">
 
         <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">学号</label>
-                <div class="layui-input-inline">
-                    <input id="stu_no" name="phone" readonly class="layui-input">
-                </div>
-            </div>
+
             <div class="layui-inline">
                 <label class="layui-form-label">姓名</label>
                 <div class="layui-input-inline">
-                    <input id="stu_name" name="email" readonly class="layui-input">
+                    <input id="stu_name" name="name"  class="layui-input">
                 </div>
             </div>
         </div>
@@ -31,14 +33,14 @@
             <div class="layui-inline">
                 <label class="layui-form-label">性别</label>
                 <div class="layui-input-inline">
-                    <input id="stu_sex" name="stu_id" readonly class="layui-input">
+                    <input id="stu_sex" name="sex"  class="layui-input">
                 </div>
             </div>
 
             <div class="layui-inline">
                 <label class="layui-form-label">班级</label>
                 <div class="layui-input-inline">
-                    <input id="stu_class" name="sex" readonly class="layui-input">
+                    <input id="stu_class" name="class"  class="layui-input">
                 </div>
             </div>
         </div>
@@ -47,15 +49,19 @@
             <div class="layui-inline">
                 <label class="layui-form-label">地址</label>
                 <div class="layui-input-inline">
-                    <input id="stu_address" name="major" readonly class="layui-input">
+                    <input id="stu_address" name="address"  class="layui-input">
                 </div>
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label">电话</label>
                 <div class="layui-input-inline">
-                    <input id="stu_phone" name="school_date" readonly class="layui-input">
+                    <input id="stu_phone" name="phone"  class="layui-input">
                 </div>
             </div>
+        </div>
+
+        <div class="layui-input-inline login-btn">
+            <button class="layui-btn">添加学生信息</button>
         </div>
 
     </form>
@@ -64,3 +70,4 @@
 <script src="layui/layui.all.js"></script>
 </body>
 </html>
+
